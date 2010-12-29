@@ -421,7 +421,7 @@ void openNewModel( void )
 		g_clPMDModel.load( szFileName );
 	}
 #else
-	char	*szFileName = "../Data/miku.pmd";
+	char	*szFileName = "../tmp/miku.pmd";
 	g_clPMDModel.load( szFileName );
 #endif
 }
@@ -465,7 +465,7 @@ void openNewMotion( void )
 		g_clPMDModel.resetRigidBodyPos();
 	}
 #else
-	char	*szFileName = "../Data/popipo.vmd";
+	char	*szFileName = "../tmp/dance.vmd";
 	g_clVMDMotion.load( szFileName );
 
 	g_clPMDModel.setMotion( &g_clVMDMotion, false );
